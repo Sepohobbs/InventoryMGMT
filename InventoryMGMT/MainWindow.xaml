@@ -1,0 +1,18 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl Height="311" HorizontalAlignment="Left" Name="TabControl" VerticalAlignment="Top" Width="503">
+            <TabItem Header="Transaction" Name="trans_tab">
+                <Grid Name="trans_grid">
+                    <ListBox Height="214" HorizontalAlignment="Left" Margin="0,59,0,0" Name="trans_listbox" VerticalAlignment="Top" Width="305" />
+                    <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="353,31,0,0" Name="Button1" VerticalAlignment="Top" Width="75" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Inventory" Name="inven_tab">
+                <Grid Name="inven_grid"></Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
