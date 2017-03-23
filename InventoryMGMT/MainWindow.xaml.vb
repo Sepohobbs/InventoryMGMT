@@ -7,19 +7,25 @@
         Dim in_stock As List(Of Integer) = items.stock
 
 
-        For Each x In items.item_number
-            If items.item_number.Contains(search_txtbox_tran.Text) Then
+        listbox_item_tran.Items.Clear()
+        listbox_price_tran.Items.Clear()
+        listbox_stock_tran.Items.Clear()
+
+        For x = 0 To item_numbers.Count - 1
+
+
+            'If items.item_number.Contains(search_txtbox_tran.Text) Then
+            If items.item_number(x) = search_txtbox_tran.Text Then
+
                 listbox_item_tran.Items.Add(item_numbers(x))
                 listbox_price_tran.Items.Add(prices(x))
                 listbox_stock_tran.Items.Add(in_stock(x))
 
-                'trying to find a way to refresh the items shown in listbox_stock_tran
-                'after i click to search they dont show but the break points lead me to believe that are being added
 
             End If
 
+            listbox_item_tran.Items.Refresh()
         Next
-
 
     End Sub
 
@@ -48,12 +54,30 @@
         Dim in_stock As List(Of Integer) = items.stock
 
 
-        For x = 0 To item_numbers.Count
+        For x = 0 To item_numbers.Count - 1
             listbox_item_inv.Items.Add(item_numbers(x))
             listbox_price_inv.Items.Add(prices(x))
             listbox_stock_inv.Items.Add(in_stock(x))
         Next
 
 
+    End Sub
+    
+    Private Sub search_bttn_inv_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles search_bttn_inv.Click
+        Dim item_numbers As List(Of String) = items.item_number
+        Dim prices As List(Of Double) = items.price
+        Dim in_stock As List(Of Integer) = items.stock
+
+
+
+        'search inv page to highlight .contains
+        For x = 0 To item_numbers.Count - 1
+            If items.item_number.Contains(search_txtbox_inv.Text) Then
+
+                listbox_item_inv.Items.Add(item_numbers(x))
+                listbox_price_inv.Items.Add(prices(x))
+                listbox_stock_inv.Items.Add(in_stock(x))
+            End If
+        Next
     End Sub
 End Class

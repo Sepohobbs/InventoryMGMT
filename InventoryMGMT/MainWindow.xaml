@@ -23,6 +23,8 @@
                     <ListBox Height="236" HorizontalAlignment="Left" Margin="0,43,0,0" Name="listbox_item_inv" VerticalAlignment="Top" Width="86" />
                     <ListBox Height="236" HorizontalAlignment="Left" Margin="83,43,0,0" Name="listbox_price_inv" VerticalAlignment="Top" Width="86" />
                     <ListBox Height="236" HorizontalAlignment="Left" Margin="167,43,0,0" Name="listbox_stock_inv" VerticalAlignment="Top" Width="86" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="6,6,0,0" Name="search_txtbox_inv" VerticalAlignment="Top" Width="106" />
+                    <Button Content="Search" Height="23" HorizontalAlignment="Left" Margin="140,6,0,0" Name="search_bttn_inv" VerticalAlignment="Top" Width="75" />
                 </Grid>
             </TabItem>
         </TabControl>

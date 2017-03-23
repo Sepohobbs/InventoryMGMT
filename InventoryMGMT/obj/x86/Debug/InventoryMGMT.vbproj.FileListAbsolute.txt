@@ -24,3 +24,16 @@ C:\Users\User\documents\visual studio 2010\Projects\InventoryMGMT\InventoryMGMT\
 C:\Users\User\documents\visual studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.g.resources
 C:\Users\User\documents\visual studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.Resources.resources
 C:\Users\User\documents\visual studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.vbproj.GenerateResource.Cache
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.exe
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.xml
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.pdb
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\bin\Debug\InventoryMGMT.exe
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\bin\Debug\InventoryMGMT.pdb
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\bin\Debug\InventoryMGMT.xml
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\MainWindow.baml
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\MainWindow.g.vb
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\Application.g.vb
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT_MarkupCompile.cache
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.g.resources
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.Resources.resources
+C:\Users\Sepo\Documents\Visual Studio 2010\Projects\InventoryMGMT\InventoryMGMT\obj\x86\Debug\InventoryMGMT.vbproj.GenerateResource.Cache
