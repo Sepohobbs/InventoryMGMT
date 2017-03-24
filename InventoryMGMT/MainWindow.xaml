@@ -8,21 +8,18 @@
                 <Grid Name="trans_grid">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="117*" />
-                        <ColumnDefinition Width="376*" />
                     </Grid.ColumnDefinitions>
-                    <Button Content="Seach" Height="23" HorizontalAlignment="Right" Margin="0,6,309,0" Name="search_bttn_tran" VerticalAlignment="Top" Width="66" Grid.Column="1" />
+                    <Button Content="Seach" Height="23" HorizontalAlignment="Left" Margin="118,5,0,0" Name="search_bttn_tran" VerticalAlignment="Top" Width="66" />
                     <TextBox Height="23" HorizontalAlignment="Left" Margin="6,6,0,0" Name="search_txtbox_tran" VerticalAlignment="Top" Width="106" Text="Search" />
-                    <Button Content="Add" Height="23" HorizontalAlignment="Left" Margin="82,6,0,0" Name="add_bttn" VerticalAlignment="Top" Width="54" Grid.Column="1" />
-                    <ListBox Height="236" HorizontalAlignment="Left" Margin="0,48,0,0" Name="listbox_item_tran" VerticalAlignment="Top" Width="86" />
-                    <ListBox Height="236" HorizontalAlignment="Left" Margin="83,48,0,0" Name="listbox_price_tran" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" />
-                    <ListBox Height="236" HorizontalAlignment="Left" Margin="50,48,0,0" Name="listbox_stock_tran" VerticalAlignment="Top" Width="86" Grid.Column="1" />
+                    <Button Content="Add" Height="23" HorizontalAlignment="Left" Margin="198,5,0,0" Name="add_bttn" VerticalAlignment="Top" Width="54" />
+                    <ListBox Height="236" HorizontalAlignment="Left" Margin="0,48,0,0" Name="listbox_tran" VerticalAlignment="Top" Width="297" />
+                    <ListBox Height="157" HorizontalAlignment="Left" Margin="320,48,0,0" Name="listbox_purchase" VerticalAlignment="Top" Width="157" />
+                    <Label Content="Label" Height="23" HorizontalAlignment="Left" Margin="356,211,0,0" Name="label_price_currect" VerticalAlignment="Top" Width="91" />
                 </Grid>
             </TabItem>
             <TabItem Header="Inventory" Name="inven_tab">
                 <Grid Name="inven_grid">
-                    <ListBox Height="236" HorizontalAlignment="Left" Margin="0,43,0,0" Name="listbox_item_inv" VerticalAlignment="Top" Width="86" />
-                    <ListBox Height="236" HorizontalAlignment="Left" Margin="83,43,0,0" Name="listbox_price_inv" VerticalAlignment="Top" Width="86" />
-                    <ListBox Height="236" HorizontalAlignment="Left" Margin="167,43,0,0" Name="listbox_stock_inv" VerticalAlignment="Top" Width="86" />
+                    <ListBox Height="236" HorizontalAlignment="Left" Margin="0,43,0,0" Name="listbox_inv" VerticalAlignment="Top" Width="290" />
                     <TextBox Height="23" HorizontalAlignment="Left" Margin="6,6,0,0" Name="search_txtbox_inv" VerticalAlignment="Top" Width="106" />
                     <Button Content="Search" Height="23" HorizontalAlignment="Left" Margin="140,6,0,0" Name="search_bttn_inv" VerticalAlignment="Top" Width="75" />
                 </Grid>
