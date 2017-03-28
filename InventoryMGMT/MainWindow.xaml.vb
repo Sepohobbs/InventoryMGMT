@@ -2,8 +2,8 @@
     Dim items_list As New List(Of ITEM_CLASS)
     Dim search_list As New List(Of ITEM_CLASS)
     Dim purchase_list As New List(Of ITEM_CLASS)
+    Dim temp_purchase_list As New List(Of ITEM_CLASS)
 
-    Dim temp_stock As New List(Of Integer)
 
     Private Sub search_bttn_tran_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles search_bttn_tran.Click
         Dim found_index As Integer = search(search_txtbox_tran.Text, items_list)
@@ -59,22 +59,39 @@
 
 
     Private Sub add_bttn_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles add_bttn.Click
+
+        'playing around to keep stock from going negative while adding to purchase list
+
         Dim total_price_current As Double = 0
 
         purchase_list.Add(search_list(0))
-        listbox_purchase.ItemsSource = purchase_list
-        listbox_purchase.Items.Refresh()
+        temp_purchase_list.Add(search_list(0))
 
-        For current_item_index = 0 To purchase_list.Count - 1
-            total_price_current += purchase_list(current_item_index).price
+        For x = 0 To purchase_list.Count - 1
+            If temp_purchase_list(x).stock = purchase_list(x).stock Then
 
+                listbox_purchase.ItemsSource = purchase_list
+                listbox_purchase.Items.Refresh()
+
+
+
+                For current_item_index = 0 To purchase_list.Count - 1
+                    'also broke auto add price 
+                    total_price_current += purchase_list(current_item_index).price
+
+                    'somehow this line subtracts from purchase_list and temp_p_l
+                    temp_purchase_list(current_item_index).stock = temp_purchase_list(current_item_index).stock - 1
+
+                Next
+            Else
+                MessageBox.Show("no stockk")
+
+            End If
         Next
-
         'adds a temp stock to keep from going negative
-        temp_stock.Add(purchase_list(purchase_list.Count - 1).stock)
+        'temp_stock.Add(purchase_list(purchase_list.Count - 1).stock)
 
-        label_price_currect.Content = total_price_current
-
+        'label_price_currect.Content = total_price_current
     End Sub
 
    
@@ -101,6 +118,7 @@
         Next
 
 
+        'subtract stock
         For current_item_index = 0 To purchase_list.Count - 1
             purchase_list(current_item_index).stock = purchase_list(current_item_index).stock - 1
 
