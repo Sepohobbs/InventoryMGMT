@@ -14,7 +14,8 @@
                     <Button Content="Add" Height="23" HorizontalAlignment="Left" Margin="198,5,0,0" Name="add_bttn" VerticalAlignment="Top" Width="54" />
                     <ListBox Height="236" HorizontalAlignment="Left" Margin="0,48,0,0" Name="listbox_tran" VerticalAlignment="Top" Width="297" />
                     <ListBox Height="157" HorizontalAlignment="Left" Margin="320,48,0,0" Name="listbox_purchase" VerticalAlignment="Top" Width="157" />
-                    <Label Content="Label" Height="23" HorizontalAlignment="Left" Margin="356,211,0,0" Name="label_price_currect" VerticalAlignment="Top" Width="91" />
+                    <Label Content="Price:" Height="23" HorizontalAlignment="Left" Margin="356,211,0,0" Name="label_price_currect" VerticalAlignment="Top" Width="91" />
+                    <Button Content="Purchase" Height="23" HorizontalAlignment="Left" Margin="364,6,0,0" Name="purchase_bttn" VerticalAlignment="Top" Width="66" />
                 </Grid>
             </TabItem>
             <TabItem Header="Inventory" Name="inven_tab">
