@@ -16,6 +16,4 @@
 
         Return item_string
     End Function
-
-
 End Class
